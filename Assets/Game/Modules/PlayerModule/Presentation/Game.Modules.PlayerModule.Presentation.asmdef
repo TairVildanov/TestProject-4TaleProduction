@@ -1,0 +1,7 @@
+﻿{
+  "name": "Game.Modules.PlayerModule.Presentation",
+  "references": [
+    "Game.Modules.PlayerModule.Implementation",
+    "Unity.TextMeshPro"
+  ]
+}
