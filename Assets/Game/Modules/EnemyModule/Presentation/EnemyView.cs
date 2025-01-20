@@ -21,6 +21,15 @@ namespace Game.Modules.EnemyModule.Presentation
             viewModel.HealthPercentage.Subscribe(UpdateHealthBar).AddTo(_disposable);
             viewModel.IsShieldActive.Subscribe(UpdateShieldImage).AddTo(_disposable);
             viewModel.ShieldPower.Subscribe(UpdateShieldPowerText).AddTo(_disposable);
+            viewModel.Health.Subscribe(Die).AddTo(_disposable);
+        }
+
+        private void Die(int value)
+        {
+            if (value <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
 
         private void UpdateShieldImage(bool value)

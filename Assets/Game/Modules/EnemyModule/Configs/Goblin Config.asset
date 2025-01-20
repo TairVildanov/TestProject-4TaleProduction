@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Goblin
   <Health>k__BackingField: 100
-  <Damage>k__BackingField: 40
-  <Defense>k__BackingField: 20
+  <Damage>k__BackingField: 25
+  <Defense>k__BackingField: 10

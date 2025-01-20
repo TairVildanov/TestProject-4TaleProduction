@@ -149,9 +149,21 @@ namespace Game.Modules.CoreModule.Implementation
 
         private void OnEnemyHealthChanged(int health)
         {
-            if (health > 0 || !_enemyViewModels.All(enemy => enemy.Health.Value <= 0)) return;
-            Debug.Log("Игрок победил!");
-            EndGame();
+            if (health <= 0)
+            {
+                var deadEnemies = _enemyViewModels.Where(enemy => enemy.Health.Value <= 0).ToList();
+                foreach (var enemy in deadEnemies)
+                {
+                    _enemyViewModels.Remove(enemy);
+                    enemy.Dispose();
+                }
+
+                if (_enemyViewModels.All(enemy => enemy.Health.Value <= 0) || _enemyViewModels.Count == 0)
+                {
+                    Debug.Log("Игрок победил!");
+                    EndGame();
+                }
+            }
         }
 
         private void EndGame()

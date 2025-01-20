@@ -1246,6 +1246,7 @@ MonoBehaviour:
   _playerSpawnPoint: {fileID: 1342503327}
   _enemyConfigs:
   - {fileID: 11400000, guid: 044f3a0a3aeec7140b0eeb03ff61628f, type: 2}
+  - {fileID: 11400000, guid: 044f3a0a3aeec7140b0eeb03ff61628f, type: 2}
   _enemyPrefab: {fileID: 5287041371044456788, guid: 2fdfa1d3066e01f4dab8cd263646318a, type: 3}
   _enemySpawnPoint: {fileID: 1067651329}
   _cardSpawner: {fileID: 1883394229}

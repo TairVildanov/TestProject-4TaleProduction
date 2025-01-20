@@ -35,6 +35,8 @@ namespace Game.Modules.CoreModule.Implementation
 
         private readonly int _drawPileCount = 20;
 
+        private float _enemyShift;
+
         private void Start()
         {
             SpawnPlayer();
@@ -66,7 +68,9 @@ namespace Game.Modules.CoreModule.Implementation
 
         private void SpawnEnemy(EnemyConfig enemyConfig)
         {
-            var enemy = Instantiate(_enemyPrefab, _enemySpawnPoint.position, Quaternion.identity, _enemySpawnPoint);
+            var calculatedPosition =
+                new Vector2(_enemySpawnPoint.position.x + _enemyShift, _enemySpawnPoint.position.y);
+            var enemy = Instantiate(_enemyPrefab, calculatedPosition, Quaternion.identity, _enemySpawnPoint);
 
             var enemyModel = new EnemyModel(enemyConfig.Name, enemyConfig.Health, enemyConfig.Damage,
                 enemyConfig.Defense);
@@ -75,6 +79,7 @@ namespace Game.Modules.CoreModule.Implementation
             _enemyViewModels.Add(enemyViewModel);
 
             enemy.Initialize(enemyViewModel);
+            _enemyShift -= 3.8F;
         }
 
         private CardEffect CreateCardEffect(CardEffectConfig config)
