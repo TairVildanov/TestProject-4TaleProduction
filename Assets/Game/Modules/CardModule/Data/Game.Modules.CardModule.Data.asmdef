@@ -1,0 +1,4 @@
+﻿{
+  "name": "Game.Modules.CardModule.Data",
+  "references":[ "Game.Modules.CardModule.Declaration" ]
+}

@@ -1,0 +1,9 @@
+﻿{
+  "name": "Game.Modules.CardModule.Presentation",
+  "references": [
+    "Game.Modules.CardModule.Declaration",
+    "Game.Modules.PlayerModule.Implementation",
+    "Game.Modules.EnemyModule.Implementation",
+    "Unity.TextMeshPro"
+  ]
+}

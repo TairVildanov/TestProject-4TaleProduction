@@ -1,0 +1,4 @@
+﻿{
+  "name": "Game.Modules.EnemyModule.Implementation",
+  "references":[ "Game.Modules.HealthModule.Declaration", "Game.Modules.HealthModule.Implementation" ]
+}

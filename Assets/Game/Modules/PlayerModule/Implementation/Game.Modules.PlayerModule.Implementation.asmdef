@@ -1,0 +1,9 @@
+﻿{
+  "name": "Game.Modules.PlayerModule.Implementation",
+  "references": [
+    "Game.Modules.HealthModule.Implementation",
+    "Game.Modules.HealthModule.Declaration",
+    "Game.Modules.EnemyModule.Implementation",
+    "Unity.RenderPipelines.Core.Runtime"
+  ]
+}

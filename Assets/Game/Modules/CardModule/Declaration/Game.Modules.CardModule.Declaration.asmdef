@@ -1,0 +1,7 @@
+﻿{
+  "name": "Game.Modules.CardModule.Declaration",
+  "references": [
+    "Game.Modules.PlayerModule.Implementation",
+    "Game.Modules.EnemyModule.Implementation"
+  ]
+}

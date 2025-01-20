@@ -1,0 +1,16 @@
+﻿{
+  "name": "Game.Modules.CoreModule.Implementation",
+  "references": [
+    "Game.Modules.CardModule.Implementation",
+    "Game.Modules.PlayerModule.Implementation",
+    "Game.Modules.EnemyModule.Data",
+    "Game.Modules.EnemyModule.Implementation",
+    "Game.Modules.PlayerModule.Data",
+    "Game.Modules.PlayerModule.Presentation",
+    "Game.Modules.EnemyModule.Presentation",
+    "Game.Modules.CardModule.Presentation",
+    "Game.Modules.CardModule.Declaration",
+    "Game.Modules.CardModule.Data",
+    "UniTask"
+  ]
+}

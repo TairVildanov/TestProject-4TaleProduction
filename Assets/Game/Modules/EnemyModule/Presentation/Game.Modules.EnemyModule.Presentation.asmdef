@@ -1,0 +1,7 @@
+﻿{
+  "name": "Game.Modules.EnemyModule.Presentation",
+  "references": [
+    "Game.Modules.EnemyModule.Implementation",
+    "Unity.TextMeshPro"
+  ]
+}
